@@ -1,0 +1,70 @@
+:root {
+    --app-bg: #f5f7fa;
+    --brand-primary: #fd9d5b;
+    --brand-primary-dark: #f2711a;
+    --brand-primary-light: #feb98d;
+    --el-color-primary: var(--brand-primary);
+    --el-color-primary-dark-2: var(--brand-primary-dark);
+    --el-color-primary-light-3: var(--brand-primary-light);
+    --el-color-primary-light-5: #ffd5b7;
+    --el-color-primary-light-7: #ffe8d8;
+    --el-color-primary-light-8: #fff1e6;
+    --el-color-primary-light-9: #fff9f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        sans-serif;
+    background: #fffbf5 url('/assets/background.png') center/cover fixed no-repeat;
+    color: #1f2933;
+}
+
+#app {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(2px);
+}
+
+.el-button {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: #fff;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.el-button:not(.is-link):not(.is-text):hover {
+    background-color: var(--brand-primary-dark);
+    border-color: var(--brand-primary-dark);
+    box-shadow: 0 6px 12px rgba(253, 157, 91, 0.35);
+}
+
+.el-button.is-plain {
+    background-color: #fff1e6;
+    border-color: var(--brand-primary-light);
+    color: var(--brand-primary);
+}
+
+.el-button.is-plain:hover {
+    background-color: #ffd5b7;
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+.el-button.is-link,
+.el-button.is-text {
+    background: transparent;
+    border-color: transparent;
+    color: var(--brand-primary);
+}
+
+.el-button.is-link:hover,
+.el-button.is-text:hover {
+    color: var(--brand-primary-dark);
+}
