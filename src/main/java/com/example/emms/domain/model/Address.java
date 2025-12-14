@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Embeddable
 @Data
-public class Address {  // 改为 public
+public class Address {
     private String province;
     private String city;
     private String detail;
